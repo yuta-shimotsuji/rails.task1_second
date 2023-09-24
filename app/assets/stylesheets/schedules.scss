@@ -1,0 +1,217 @@
+// Place all the styles related to the schedules controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.contloller_wallpaper {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.schedules_message {
+    width: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.index_new_schedule {
+    width: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    padding: 20px;
+    background-color: #4db56a;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+.schedules_dispaly {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border:1px solid #333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+}
+
+table tr:nth-child(odd){
+    background-color: #eee
+}
+
+th,td {
+    width:calc(100%/9)
+}
+
+.counter_wallpaper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.counter {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+
+.schedules_counter {
+    width: 10%;
+
+}
+
+.today_display {
+    width: 10%;
+}
+
+
+// 以下show
+// 
+// 
+// 
+// 
+// 
+// 
+
+.show_contloller_wallpaper {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.show_num {
+    width: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.edit_link {
+    width: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    padding: 20px;
+    background-color: #4db56a;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+.show_schedules_dispaly {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.show_display {
+    border:1px solid #333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.show_tr {
+    border:1px solid #333;
+    border-collapse: collapse;
+    text-align: center;
+    width:calc(100%/2)
+}
+
+.show_th {
+    border:1px solid #333;
+    border-collapse: collapse;
+    text-align: center;
+    width:calc(100%/2)
+}
+
+.show_td {
+    border:1px solid #333;
+    border-collapse: collapse;
+    text-align: center;
+    width:calc(100%/2)
+}
+
+.show_display {
+    width: 80%;
+}
+
+.show_display tr:nth-child(odd){
+    background-color: #eee
+}
+
+// 以下new
+// 
+// 
+// 
+// 
+// 
+// 
+
+.new_wallpaper {
+    width: 100%;
+}
+
+.new_message_display {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.new_message {
+    width: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.new_display {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 40px;
+}
+
+.new_display > div {
+    padding: 10px;
+}

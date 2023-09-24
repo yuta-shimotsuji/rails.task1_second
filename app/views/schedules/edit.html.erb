@@ -1,0 +1,36 @@
+<div class="new_wallpaper">
+
+ <div class="new_message_display">
+  <div class="new_message">予定の編集</div>
+ </div>
+
+ 
+    <div class="container">
+    <%= form_with model: @schedule do |form| %>
+        <div class="new_display">
+            <div class="title">
+                <%= form.label :title %><br><%= form.text_field :title , id: :schedule_title ,value: @schedule.title %>
+            </div>
+            <div class="day_set">
+                <div class="start_day">
+                    <%= form.label :start_day %><%= form.date_field :start_day , id: :schedule_start_day%>
+                </div>
+                <div class="last_day">
+                    <%= form.label :last_day %><%= form.date_field :last_day , id: :schedule_last_day%>
+                </div>
+            </div>
+            <div class="all_day">
+                <%= form.label :all_day %><%= form.check_box :all_day , id: :schedule_all_day%>
+            </div> 
+            <div class="memo">
+                <%= form.label :memo %><br><%= form.text_area :memo , id: :schedule_memo %>
+            </div>
+            <div class="last_action">
+                <%= form.submit %>
+            </div>
+        </div>
+    <% end %>
+    <button class="cancel"><%= link_to "キャンセル",schedules_path %></button>
+    </div>
+
+</div>

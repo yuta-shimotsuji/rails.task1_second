@@ -1,0 +1,36 @@
+<div class="show_wallpaper">
+
+ <div class="show_contloller_wallpaper">
+  <div class="index_link"><%= link_to "一覧へ",:schedules %></div>
+  <div class="show_num">id</div>
+  <button class="edit_link"><%= link_to "編集",edit_schedule_path(@schedule.id)%></button>
+ </div>
+
+ <div class="show_schedules_dispaly">
+  <table class="show_display">
+   <tr class="show_tr">
+    <th class="show_th">開始日</th>
+    <td class="show_td"><%= @schedule.start_day %></td>
+   </tr>
+   <tr class="show_tr">
+    <th class="show_th">終了日</th>
+    <td class="show_td"><%= @schedule.last_day %></td>
+   </tr>
+   <tr class="show_tr">
+    <th class="show_th">終日</th>
+        <td class="show_td">
+            <% if @schedule.all_day == "1" %>
+            <%= "◯"%>
+            <% else %>
+            <%= "" %>
+            <% end %>
+        </td>
+   </tr>
+   <tr class="show_tr">
+    <th class="show_th">スケジュールメモ</th>
+    <td class="show_td"><%= @schedule.memo %></td>
+   </tr>
+  </table>
+ </div>
+
+</div>
