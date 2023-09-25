@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      admin: 管理者
+    attributes:
+      schedule:
+        id: ID
+        title: タイトル
+        start_day: 開始日
+        last_day: 終了日
+        all_day: 終日
+        memo: スケジュールメモ
+      admin:
+        id: ID
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M"
+
