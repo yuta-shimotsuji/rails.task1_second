@@ -7,8 +7,14 @@ class Schedule < ApplicationRecord
     validate :start_last_check
 
     def start_last_check
-        errors.add(:last_day, "の日付を正しく記入してください。") unless
-        self.start_day <= self.last_day
+
+        if self.start_day.present? && self.last_day.present?
+
+            errors.add(:last_day, "の日付を正しく記入してください。") unless
+            self.start_day < self.last_day
+
+        end
+
     end
 
 end
