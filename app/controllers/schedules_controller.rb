@@ -6,7 +6,7 @@ class SchedulesController < ApplicationController
  end
 
  def show
-    @schedule = Schedule.find_by(params[:id])
+    @schedule = Schedule.find(params[:id])
  end
 
  def new
@@ -26,7 +26,7 @@ class SchedulesController < ApplicationController
  end
 
  def edit
-    @schedule = Schedule.find_by(params[:id])
+    @schedule = Schedule.find(params[:id])
  end
 
  def update
